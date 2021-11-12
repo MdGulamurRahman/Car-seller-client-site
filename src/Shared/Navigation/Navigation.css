@@ -1,0 +1,24 @@
+.nav-area{
+    background-color: #252729;
+  
+}
+.drop-img{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+.dropdown-menu.show {
+    margin-left: -110px;
+    padding: 40px;
+    text-align: center;
+    overflow: hidden;
+        opacity: 0.9;
+   
+}
+@media only screen and (max-width: 668px) {
+    .dropdown-menu.show{
+        overflow: hidden;
+        opacity: 0.9;
+        margin-left: 0px;
+    }
+}

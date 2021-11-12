@@ -1,0 +1,58 @@
+.home-banner{
+    background-image: url('../../../images/banner-top.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 160vh;
+   
+}
+.banner-logo{
+    width: 36%;
+    margin-right: 42%;
+    margin-top: 30%;
+}
+.h-btn{
+    width: 28%;
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: 0;
+    background: linear-gradient(45deg, #ffc21c, #7a7560);
+    margin-right: 49%;
+    color: white;
+    font-weight: 500;
+}
+.logo-parent h6{
+    margin-right: 41%;
+    color: rgb(243, 187, 3);
+}
+
+@media only screen and (max-width: 1024px){
+    .home-banner{
+        background-image: url('../../../images/home.jpg');
+        background-position: center;
+        height: 80vh;
+        width: 100%;
+       
+    }
+    .h-btn{
+        width: 50%;
+        padding: 15px 20px;
+        border-radius: 100px;
+        border: 0;
+        background: linear-gradient(45deg, #ffc21c, #7a7560);
+       margin-left: 100px;
+        color: white;
+        font-weight: 500;
+    }
+    .banner-logo{
+        width: 60%;
+        margin-right: 4%;
+        margin-top: 20%;
+    }
+    .logo-parent h6{
+        margin-right: -15px;
+        color: rgb(243, 187, 3);
+    }
+    .logo-parent button{
+        margin-top: 5%
+    }
+}

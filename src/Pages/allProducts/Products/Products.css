@@ -1,0 +1,12 @@
+.p-banner{
+    min-height: 320vh;
+    background: url('../../../images/dark2.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .p-banner{
+        min-height: 870vh;
+    }
+    
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+.input-field{
+    padding: 10px 150px;
+    text-align: center;
+    border-radius: 5px;
+}
+.input-btn{
+    background-color: #f7b614;
+    border: 0px;
+    padding: 10px 80px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.d-banner{
+    background-image: url("../../images/dark1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    font-family: 'Acme', sans-serif;
+}
+
+@media only screen and (max-width:768px){
+    .input-field{
+        padding: 10px 60px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .d-banner{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 40px;
+    }
+    
+}
