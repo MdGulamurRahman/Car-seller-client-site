@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css'
 const Footer = () => {
     return (
@@ -49,16 +50,16 @@ const Footer = () => {
                     ALL NEW CARS
                 </h6>
                 <p className="text-white-50">
-                    <a href="#!" class="text-reset">PIZZA</a>
+                    <a href="#!" class="text-reset">LAMBORGHINI</a>
                 </p>
                 <p className="text-white-50">
-                    <a href="#!" class="text-reset">BURGER</a>
+                    <a href="#!" class="text-reset">FERRARI</a>
                 </p>
                 <p className="text-white-50">
-                    <a href="#!" class="text-reset">HOTDOG</a>
+                    <a href="#!" class="text-reset">LEXUS</a>
                 </p>
                 <p className="text-white-50">
-                    <a href="#!" class="text-reset">SANDWICH</a>
+                    <a href="#!" class="text-reset">AVALON</a>
                 </p>
                 </div>
                 <div className="mx-auto mb-4 col-md-3 col-lg-2 col-xl-2">
@@ -72,7 +73,7 @@ const Footer = () => {
                     <a href="#!" class="text-reset">SETTINGS</a>
                 </p>
                 <p className="text-white-50">
-                    <a href="#!" class="text-reset">ORDERS</a>
+                    <Link to="/allProducts" class="text-reset">ORDERS</Link>
                 </p>
                 <p className="text-white-50">
                     <a href="#!" class="text-reset">HELP</a>

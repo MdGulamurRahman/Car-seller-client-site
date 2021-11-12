@@ -7,8 +7,8 @@ const Ratings = () => {
         .then(data => setReviews(data))
     },[])
     return (
-        <div>
-            <h2>Our Clients Reviews</h2>
+        <div className="my-5">
+            <h2 className="py-5 fw-bold">OUR CLIENTS REVIEWS</h2>
             <div className="container ratings">
                 <div className="row">
                     {
@@ -20,7 +20,7 @@ const Ratings = () => {
                                         height="100"
                                         className="rounded-circle" alt="" />
                                     <h4>{review?.name}</h4>
-                                    <p style={{ fontWeight: 600 }}>{review?.reviewDetails}</p>
+                                    <p className="text-secondary" style={{ fontWeight: 600 }}>{review?.reviewDetails}</p>
                                     {   
                                         review?.ratings==="5"?
                                         <h6>Ratings: <i class="fas fa-star"></i>

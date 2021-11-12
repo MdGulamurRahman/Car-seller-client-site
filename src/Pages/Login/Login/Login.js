@@ -19,7 +19,6 @@ const Login = () => {
     const handleLoginSubmit = (e) => {
         loginUser(loginData.email, loginData.password, location, history);
         e.preventDefault();
-        alert('Login Successful');
 
     }
     //google handler

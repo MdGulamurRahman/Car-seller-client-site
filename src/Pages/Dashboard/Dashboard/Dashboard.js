@@ -144,7 +144,7 @@ export default function Dashboard() {
             </List>
             <Divider />
            <List>
-                <Link style={{textDecoration: 'none', color: 'black', fontWeight: 'bold'}} to={`${url}/manageAllOrders`} >
+                <Link style={{textDecoration: 'none', color: 'black', fontWeight: 'bold'}} to={`${url}`} >
                 <Button color="inherit">Manage All Orders</Button>
                 </Link> <br/>
             </List>
@@ -175,7 +175,7 @@ export default function Dashboard() {
             </List>
             <Divider />
             <List>
-                <Link style={{textDecoration: 'none', color: 'black', fontWeight: 'bold'}} to={`${url}/myOrders`} >
+                <Link style={{textDecoration: 'none', color: 'black', fontWeight: 'bold'}} to={`${url}`} >
                 <Button color="inherit">My Orders</Button>
                 </Link> <br/>
             </List>
@@ -203,10 +203,10 @@ export default function Dashboard() {
         <DrawerHeader />
         <Box>
       {admin ?<Switch>
-        <Route exact path={`${path}/makeAdmin`}>
+        <Route path={`${path}/makeAdmin`}>
           <MakeAdmin></MakeAdmin>
         </Route>
-        <Route path={`${path}/manageAllOrders`}>
+        <Route exact path={`${path}`}>
           <ManageAllOrders></ManageAllOrders>
         </Route>
         <Route path={`${path}/addProducts`}>
@@ -217,7 +217,7 @@ export default function Dashboard() {
         </Route> 
       </Switch> : 
       <Switch>
-      <Route exact path={`${path}/myOrders`}>
+      <Route exact path={`${path}`}>
         <MyOrders></MyOrders>
       </Route>
       <Route path={`${path}/review`}>
