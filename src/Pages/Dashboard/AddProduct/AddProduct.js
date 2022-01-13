@@ -6,7 +6,7 @@ import './AddProduct.css'
 const AddProduct = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data =>{
-        fetch('http://localhost:5000/addSinglePackage', {
+        fetch('https://mighty-sea-73980.herokuapp.com/addSinglePackage', {
             method: 'POST',
             headers: {'content-type':'application/json'},
             body: JSON.stringify(data)

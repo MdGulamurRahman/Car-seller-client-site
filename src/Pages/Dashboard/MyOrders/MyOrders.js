@@ -11,7 +11,7 @@ const MyOrders = () => {
     const {user} = useAuth();
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/myOrders?email=${user.email}`)
+        fetch(`https://mighty-sea-73980.herokuapp.com/myOrders?email=${user.email}`)
         .then(res => res.json())
         .then(result => {
            setMyOrders(result)
@@ -22,7 +22,7 @@ const MyOrders = () => {
     const handleOrderDelete = id => {
         const proceed = window.confirm("Are you want to delete?")
         if(proceed){
-            const url = `http://localhost:5000/deleteOrder/${id}`
+            const url = `https://mighty-sea-73980.herokuapp.com/deleteOrder/${id}`
             fetch(url, {
                 method: "DELETE"
             })

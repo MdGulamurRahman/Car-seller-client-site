@@ -13,7 +13,7 @@ const ProductDetails = () => {
     const {user} = useAuth()
    
     useEffect(()=>{
-        const url = `http://localhost:5000/singleCar/${productId}`
+        const url = `https://mighty-sea-73980.herokuapp.com/singleCar/${productId}`
         fetch(url)
         .then(res => res.json())
         .then(data => setItem(data))
@@ -27,7 +27,7 @@ const ProductDetails = () => {
        data.product_details = item.details;
        data.price = item.price;
        data.status = "Pending";
-       fetch("http://localhost:5000/productDetails/order",{
+       fetch("https://mighty-sea-73980.herokuapp.com/productDetails/order",{
            method: "POST",
             headers: {"content-type":"application/json"},
             body: JSON.stringify(data)

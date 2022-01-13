@@ -103,7 +103,7 @@ const useFirebase = () => {
     //save user
     const saveUser = (email, displayName, method) => {
         const user = {email, displayName};
-        fetch('http://localhost:5000/users', {
+        fetch('https://mighty-sea-73980.herokuapp.com/users', {
             method: method,
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(user)
@@ -112,7 +112,7 @@ const useFirebase = () => {
     }
     //make admin state
     useEffect(()=>{
-        fetch(`http://localhost:5000/users/${user.email}`)
+        fetch(`https://mighty-sea-73980.herokuapp.com/users/${user.email}`)
         .then(res => res.json())
         .then(data => setAdmin(data.admin))
     },[user.email])

@@ -9,7 +9,7 @@ const ManageProducts = () => {
     const [status, setStatus] = useState(true); 
 
     useEffect(()=>{
-        fetch('http://localhost:5000/cars')
+        fetch('https://mighty-sea-73980.herokuapp.com/cars')
         .then(res => res.json())
         .then(data => {
             setManageProducts(data)
@@ -19,7 +19,7 @@ const ManageProducts = () => {
     const handleOrderDelete = id => {
         const proceed = window.confirm("Are you want to delete?")
         if(proceed){
-            const url = `http://localhost:5000/deleteProduct/${id}`
+            const url = `https://mighty-sea-73980.herokuapp.com/deleteProduct/${id}`
             fetch(url, {
                 method: "DELETE"
             })

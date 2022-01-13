@@ -6,7 +6,7 @@ const Review = () => {
     const { register, handleSubmit, reset } = useForm();
     const {user} = useAuth()
     const onSubmit = data =>{
-        fetch('http://localhost:5000/addRatings', {
+        fetch('https://mighty-sea-73980.herokuapp.com/addRatings', {
             method: 'POST',
             headers: {'content-type':'application/json'},
             body: JSON.stringify(data)
